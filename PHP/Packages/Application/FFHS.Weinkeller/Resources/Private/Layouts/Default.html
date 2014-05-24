@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title><f:render section="Title" /></title>
+		<f:base />
+
+        <link rel="stylesheet" href="{f:uri.resource(path: 'bootstrap.css')}" type="text/css"/>
+        <link rel="stylesheet" href="{f:uri.resource(path: 'style.css')}" type="text/css"/>
+	</head>
+	<body>
+        <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><b>Weinkeller</b></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/weinkeller/overview">Weinkeller</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+		<f:render section="Content" />
+
+        <script src="{f:uri.resource(path: 'jquery.min.js')}"></script>
+        <script src="{f:uri.resource(path: 'bootstrap.min.js')}"></script>
+	</body>
+</html>

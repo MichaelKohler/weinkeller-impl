@@ -14,11 +14,11 @@
 # informative welcome screen.
 
 -
-  name: 'Welcome'
-  uriPattern: '<WelcomeSubroutes>'
+  name: 'Weinkeller'
+  uriPattern: '<WeinkellerSoubroutes>'
   subRoutes:
-    WelcomeSubroutes:
-      package: TYPO3.Welcome
+    WeinkellerSubroutes:
+      package: FFHS.Weinkeller
 
 ##
 # Flow subroutes
