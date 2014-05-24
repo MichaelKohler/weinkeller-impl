@@ -27,7 +27,7 @@
   defaults:
     '@package': 'FFHS.Weinkeller'
     '@controller': 'Standard'
-    '@action': 'index'
+    '@action': 'test'
     '@format': 'html'
 
 ##

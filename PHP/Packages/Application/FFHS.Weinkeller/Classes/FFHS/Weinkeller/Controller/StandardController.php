@@ -19,4 +19,8 @@ class StandardController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 		));
 	}
 
+    public function testAction() {
+
+    }
+
 }
