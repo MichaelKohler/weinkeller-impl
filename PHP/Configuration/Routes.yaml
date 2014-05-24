@@ -27,7 +27,16 @@
   defaults:
     '@package': 'FFHS.Weinkeller'
     '@controller': 'Standard'
-    '@action': 'test'
+    '@action': 'overview'
+    '@format': 'html'
+
+-
+  name: 'Weinkeller Details'
+  uriPattern: 'details'
+  defaults:
+    '@package': 'FFHS.Weinkeller'
+    '@controller': 'Standard'
+    '@action': 'details'
     '@format': 'html'
 
 ##
