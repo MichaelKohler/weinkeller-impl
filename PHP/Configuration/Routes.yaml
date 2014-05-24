@@ -28,6 +28,7 @@
     '@package': 'FFHS.Weinkeller'
     '@controller': 'Standard'
     '@action': 'index'
+    '@format': 'html'
 
 ##
 # Flow subroutes
