@@ -15,10 +15,19 @@
 
 -
   name: 'Weinkeller'
-  uriPattern: '<WeinkellerSoubroutes>'
-  subRoutes:
-    WeinkellerSubroutes:
-      package: FFHS.Weinkeller
+  uriPattern: ''
+  defaults:
+    '@package': 'FFHS.Weinkeller'
+    '@controller': 'Standard'
+    '@action': 'index'
+
+-
+  name: 'Weinkeller Overview'
+  uriPattern: 'overview'
+  defaults:
+    '@package': 'FFHS.Weinkeller'
+    '@controller': 'Standard'
+    '@action': 'index'
 
 ##
 # Flow subroutes
