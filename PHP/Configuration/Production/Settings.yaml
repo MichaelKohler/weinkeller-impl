@@ -2,6 +2,6 @@ TYPO3:
   Flow:
     persistence:
       backendOptions:
-        dbname: 'weinkeller-php'
+        dbname: 'weinkeller-php-prd'
         user: 'weinkeller'
         password: 'weinkeller2014ffhs'
