@@ -39,6 +39,15 @@
     '@action': 'details'
     '@format': 'html'
 
+-
+  name: 'Weinkeller Authentication / Registration'
+  uriPattern: 'authenticate'
+  defaults:
+    '@package': 'FFHS.Weinkeller'
+    '@controller': 'Standard'
+    '@action': 'authenticate'
+    '@format': 'html'
+
 ##
 # Flow subroutes
 #

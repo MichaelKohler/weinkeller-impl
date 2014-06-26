@@ -1,6 +1,6 @@
 <f:layout name="Default" />
 
-<f:section name="Title">Index view of Standard controller</f:section>
+<f:section name="Title">Weinkeller</f:section>
 
 <f:section name="Content">
     <div id="home">
@@ -31,14 +31,14 @@
                 <h3>Login / Register</h3>
                 <br>
 
-                <form role="form" action="#" method="post" enctype="plain">
+                <form role="form" action="/authenticate" method="post" enctype="plain">
                     <div class="form-group">
                         <label for="name">Username</label>
-                        <input type="name" name="Name" class="form-control" id="name" placeholder="Your username">
+                        <input type="name" name="name" class="form-control" id="name" placeholder="Your username">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="Password" class="form-control" id="password">
+                        <input type="password" name="password" class="form-control" id="password">
                     </div>
                     <br>
                     <button type="submit" class="btn btn-large btn-info">Login / Register</button>

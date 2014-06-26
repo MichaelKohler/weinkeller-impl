@@ -21,8 +21,12 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/overview">Weinkeller</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <f:security.ifHasRole role="User">
+                        <f:then>
+                            <li><f:link.action action="overview" controller="Standard">Weinkeller</f:link.action></li>
+                            <li><f:link.action action="logout" controller="Standard">Logout</f:link.action></li>
+                        </f:then>
+                    </f:security.ifHasRole>
                 </ul>
             </div>
         </div>

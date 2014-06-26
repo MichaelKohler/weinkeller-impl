@@ -3,3 +3,10 @@ TYPO3:
     persistence:
       backendOptions:
         host: '127.0.0.1'
+    security:
+          enable: TRUE
+          authentication:
+            authenticationStrategy: oneToken
+            providers:
+              DefaultProvider:
+                provider: PersistedUsernamePasswordProvider
