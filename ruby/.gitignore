@@ -36,5 +36,4 @@ lib/bundler/man/
 
 # other things
 .idea
-
-
+Gemfile.lock
