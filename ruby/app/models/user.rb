@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
 
   validates_uniqueness_of :name
 
+  has_many :cellars
+
   def self.authenticate(user)
     found_user = find_by_name(user[:name])
     password = BCrypt::Engine.hash_secret user[:password], found_user.salt

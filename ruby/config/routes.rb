@@ -1,9 +1,10 @@
 Weinkeller::Application.routes.draw do
-  root 'weinkeller#index'
+  root 'application#index'
 
-  resources :weinkeller do
+  resources :cellars do
     get :overview
-    get :details
+    get :details, to: 'cellars#details', as: :details
+    post 'create' => "cellars#create"
   end
 
   resources :users do

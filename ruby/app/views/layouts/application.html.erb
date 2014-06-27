@@ -24,7 +24,7 @@
     <ul class="nav navbar-nav">
       <li><a href="/">Home</a></li>
       <% if current_user %>
-        <li><%= link_to "Weinkeller", weinkeller_path(current_user) %></li>
+        <li><%= link_to "Weinkeller", cellar_path(current_user) %></li>
         <li><%= link_to "Logout", logout_path %></li>
       <% end %>
     </ul>

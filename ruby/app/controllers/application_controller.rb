@@ -8,4 +8,9 @@ class ApplicationController < ActionController::Base
     end
   end
   helper_method :current_user
+
+  def index
+    @user = User.new
+    render 'index'
+  end
 end

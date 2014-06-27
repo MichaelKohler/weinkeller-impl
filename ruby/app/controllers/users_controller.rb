@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     if User.check_if_user_exists(params[:user])
       if user = User.authenticate(params[:user])
         session[:user_id] = user.id
-        redirect_to weinkeller_path(user)
+        redirect_to cellar_path(user)
       else
         redirect_to '/'
       end
@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       @user = User.create_new(params[:user][:name], params[:user][:password])
       if @user
         session[:user_id] = @user.id
-        redirect_to weinkeller_path(@user)
+        redirect_to cellar_path(@user)
       else
         redirect_to '/'
       end
